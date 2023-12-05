@@ -10,7 +10,7 @@ on:
 
 # workflow의 실행은 하나 이상의 job으로 구성 됨
 jobs:
-  install_simulator
+  install_simulator:
     runs-on: macos-latest
     steps: 
       - uses: muukii/actions-xcode-install-simulator@main
