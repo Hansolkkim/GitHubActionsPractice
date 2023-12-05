@@ -20,7 +20,7 @@ jobs:
         id: target
         with:
           device: 'iPhone 14 Pro Max'
-          runtime: '14.0
+          runtime: '14.0'
   # 이 workflow 는 "build" 라는 single job 으로 구성
   build:
     # job이 실행될 환경 - 최신 mac os
