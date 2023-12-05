@@ -24,4 +24,4 @@ jobs:
       run: |
         xcodebuild clean build -project GitHubActionTestProject/GitHubActionTestProject.xcodeproj \
         -scheme GitHubActionTestProject \
-        -destination 'patform=iOS Simulator,name:Any iOS Simulator Device,OS=15.0'
+        -destination 'patform=iOS Simulator,name:iPhone 14 Pro Max,OS=15.0'
