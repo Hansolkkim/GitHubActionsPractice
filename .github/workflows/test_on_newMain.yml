@@ -10,18 +10,6 @@ on:
 
 # workflow의 실행은 하나 이상의 job으로 구성 됨
 jobs:
-  install_simulator:
-    runs-on: macos-latest
-    steps: 
-      - uses: muukii/actions-xcode-install-simulator@main
-        with:
-          ios_version: "14.0"
-      - uses: muukii/actions-xcode-create-simulator@main
-        id: target
-        with:
-          device: 'iPhone 14 Pro Max'
-          runtime: '14.0'
-  # 이 workflow 는 "build" 라는 single job 으로 구성
   build:
     # job이 실행될 환경 - 최신 mac os
     runs-on: macos-latest
@@ -35,4 +23,4 @@ jobs:
       run: |
         xcodebuild clean build -project GitHubActionTestProject/GitHubActionTestProject.xcodeproj \
         -scheme GitHubActionTestProject \
-        -destination 'platform=iOS Simulator,name=Any iOS Device'
+        -destination 'platform=iOS Simulator,name=iPhone 14 Pro Max',OS=latest
