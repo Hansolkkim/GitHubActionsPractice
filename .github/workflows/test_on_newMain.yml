@@ -23,4 +23,4 @@ jobs:
       run: |
         xcodebuild clean build -project GitHubActionTestProject/GitHubActionTestProject.xcodeproj \
         -scheme GitHubActionTestProject \
-        -destination 'platform=iOS Simulator,name=Generic iOS Device'
+        -destination generic/platform=iOS
