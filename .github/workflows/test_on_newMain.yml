@@ -23,5 +23,5 @@ jobs:
       run: |
         xcodebuild clean build -project GitHubActionTestProject/GitHubActionTestProject.xcodeproj \
         -scheme GitHubActionTestProject \
-        -destination generic/platform=iOS
+        -destination generic/platform=iOS \
         -allowProvisioningUpdates
