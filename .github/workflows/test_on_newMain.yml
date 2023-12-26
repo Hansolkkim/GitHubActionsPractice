@@ -23,4 +23,3 @@ jobs:
       run: |
         xcodebuild clean build -project GitHubActionTestProject/GitHubActionTestProject.xcodeproj \
         -scheme GitHubActionTestProject \
-        -destination 'platform=iOS Simulator,name=iPhone 14 Pro Max',OS=latest
